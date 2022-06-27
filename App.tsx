@@ -1,18 +1,13 @@
 import React from 'react';
 import './translations/i18n';
-import { StatusBar } from 'react-native';
 
-import { About } from './src/pages/main/About';
+import { AppRoutes } from '@routes/app.routes';
+import { DarkTheme } from '@themes/DarkTheme';
 
 export default function App() {
   return (
-    <>
-      <StatusBar 
-        barStyle="dark-content" 
-        translucent 
-        backgroundColor="transparent" 
-      />
-      <About />
-    </>
+    <DarkTheme>
+      <AppRoutes />
+    </DarkTheme>
   )
 }
