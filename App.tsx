@@ -2,7 +2,7 @@ import React from 'react';
 import './translations/i18n';
 import { StatusBar } from 'react-native';
 
-import { About } from './src/pages/main/About';
+import { PrivacyPolicy } from '@pages/main/PrivacyPolicy';
 
 export default function App() {
   return (
@@ -12,7 +12,7 @@ export default function App() {
         translucent 
         backgroundColor="transparent" 
       />
-      <About />
+      <PrivacyPolicy />
     </>
   )
 }
