@@ -1,18 +1,13 @@
 import React from 'react';
 import './translations/i18n';
-import { StatusBar } from 'react-native';
 
-import { PrivacyPolicy } from '@pages/main/PrivacyPolicy';
+import { AppRoutes } from '@routes/app.routes';
+import { DarkTheme } from '@themes/DarkTheme';
 
 export default function App() {
   return (
-    <>
-      <StatusBar 
-        barStyle="dark-content" 
-        translucent 
-        backgroundColor="transparent" 
-      />
-      <PrivacyPolicy />
-    </>
+    <DarkTheme>
+      <AppRoutes />
+    </DarkTheme>
   )
 }
