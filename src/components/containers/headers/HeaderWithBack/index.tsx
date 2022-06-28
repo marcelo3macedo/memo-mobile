@@ -7,9 +7,13 @@ import BackIcon from '@assets/icons/back.svg';
 import { style } from './styles';
 
 export default function HeaderWithBack() {
+  function backAction() {
+    console.log("open menu action")
+  }
+
   return (
     <View style={style.container}>
-      <Icon source={BackIcon} />
+      <Icon source={BackIcon} onPressAction={backAction} />
     </View>
   );
 }
