@@ -28,6 +28,18 @@ export const styles = class StyleSheetFactory {
           }
         })
         break;
+      case PictureTypes.FIXED_CENTERED:
+        style = StyleSheet.create({
+          picture: {
+            position: 'absolute',
+            left: 0,
+            top: 0,
+            width: '100%',
+            height: 200,
+            resizeMode: 'contain'
+          }
+        })
+        break;
       default:
         style = StyleSheet.create({
           picture: {
