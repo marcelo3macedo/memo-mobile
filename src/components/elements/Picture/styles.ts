@@ -12,10 +12,21 @@ export const styles = class StyleSheetFactory {
           picture: {
             flex: 1,
             resizeMode: 'contain',
-            maxWidth: 150
+            maxWidth: 150,
+            height: 150
           }
         })
         break;
+      case PictureTypes.MEDIUM:
+          style = StyleSheet.create({
+            picture: {
+              display: 'flex',
+              resizeMode: 'contain',
+              width: '100%',
+              height: 100
+            }
+          })
+          break;
       case PictureTypes.FIXED_RIGHT:
         style = StyleSheet.create({
           picture: {
