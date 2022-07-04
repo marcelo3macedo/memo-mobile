@@ -1,12 +1,15 @@
 import React from 'react';
+import { TouchableOpacity } from 'react-native';
 import { SvgXml } from 'react-native-svg';
 
-import { style } from './styles';
+import { sizes, style } from './styles';
 
-export function Icon({ source }:any) {
-    const width = 62, height = 62;
+export function Icon({ source, type=null, onPressAction }:any) {
+    const { width, height } = sizes.getByType({ type })
     
     return (
-        <SvgXml xml={source} style={style.light} width={width} height={height} />
+        <TouchableOpacity onPress={onPressAction}>
+            <SvgXml xml={source} style={style.light} width={width} height={height} />
+        </TouchableOpacity>
     )
 }
