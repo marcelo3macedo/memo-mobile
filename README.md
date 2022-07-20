@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/marcelo3macedo/memo-mobile">
-    <img src="public/logo.png" alt="Logo" width="120" height="120">
+    <img src="docs/images/logo.png" alt="Logo" width="120" height="120">
   </a>
 
   <h3 align="center">Memo Mobile</h3>
